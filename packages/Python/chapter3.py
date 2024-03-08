@@ -81,9 +81,7 @@ T = np.array([[0, -1, 0, 3], [1, 0, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]])
 print("TransInv: ", TransInv(T))
 
 # Q14
-S_theta = np.array(
-    [[0, -1.5708, 0, 2.3562], [1.5708, 0, 0, -2.3562], [0, 0, 0, 1], [0, 0, 0, 0]]
-)
+S_theta = np.array([[0, -1.5708, 0, 2.3562], [1.5708, 0, 0, -2.3562], [0, 0, 0, 1], [0, 0, 0, 0]])
 # Print MatrixExp6
 print("MatExp6", MatrixExp6(S_theta))
 

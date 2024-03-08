@@ -76,9 +76,7 @@ Blist = np.array(
         [0, -(1 + sq_rt3), -1, 0, 1, 0],
     ]
 )
-thetalist = np.array(
-    [-math.pi / 2, math.pi / 2, math.pi / 3, -math.pi / 4, 1, math.pi / 6]
-)
+thetalist = np.array([-math.pi / 2, math.pi / 2, math.pi / 3, -math.pi / 4, 1, math.pi / 6])
 
 T = FKinSpace(M, Slist, thetalist)
 print("T array")
