@@ -1,0 +1,37 @@
+Iteration 1:
+        joint vector : -19.284 -85.104 -17.835 14.455 -9.154 -7.273 
+        SE(3) end−effector config : 0.000  1.084  0.249  0.126 -1.084  0.000  0.675  0.126 -0.249  -0.675  0.000  0.163 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.675 0.249 -1.084 0.126 0.126 0.163 
+        angular error magnitude ∣∣omega_b∣∣ : 1.301
+        linear error magnitude ∣∣v_b∣∣ : 0.242
+------------------------------------------
+Iteration 2:
+        joint vector : -18.995 -85.451 -16.847 14.938 -9.603 -7.237 
+        SE(3) end−effector config : 0.000  0.020  -0.101  0.037 -0.020  0.000  -0.001  -0.047 0.101  0.001  0.000  -0.003 0.000  0.000  0.000  0.000 
+        error twist V_b: 0.001 -0.101 -0.020 0.037 -0.047 -0.003 
+        angular error magnitude ∣∣omega_b∣∣ : 0.103
+        linear error magnitude ∣∣v_b∣∣ : 0.060
+------------------------------------------
+Iteration 3:
+        joint vector : -18.997 -85.461 -17.061 14.692 -9.546 -7.719 
+        SE(3) end−effector config : 0.000  0.001  -0.016  -0.001 -0.001  0.000  0.028  -0.005 0.016  -0.028  0.000  0.001 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.028 -0.016 -0.001 -0.001 -0.005 0.001 
+        angular error magnitude ∣∣omega_b∣∣ : 0.032
+        linear error magnitude ∣∣v_b∣∣ : 0.006
+------------------------------------------
+Iteration 4:
+        joint vector : -18.992 -85.434 -17.129 14.575 -9.566 -7.878 
+        SE(3) end−effector config : 0.000  -0.000  0.003  0.001 0.000  0.000  0.001  -0.000 -0.003  -0.001  0.000  0.000 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.001 0.003 0.000 0.001 -0.000 0.000 
+        angular error magnitude ∣∣omega_b∣∣ : 0.004
+        linear error magnitude ∣∣v_b∣∣ : 0.001
+------------------------------------------
+Iteration 5:
+        joint vector : -18.992 -85.438 -17.123 14.597 -9.568 -7.854 
+        SE(3) end−effector config : 0.000  0.000  -0.000  0.000 -0.000  0.000  0.000  0.000 0.000  -0.000  0.000  -0.000 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.000 -0.000 -0.000 0.000 0.000 -0.000 
+        angular error magnitude ∣∣omega_b∣∣ : 0.000
+        linear error magnitude ∣∣v_b∣∣ : 0.000
+------------------------------------------
+SUCCESS
+Wrote iterates.csv

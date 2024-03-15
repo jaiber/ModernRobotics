@@ -1,0 +1,30 @@
+Iteration 1:
+        joint vector : 2.3663 -1.3974 2.2435 -0.1108 -0.3695 -2.1518 
+        SE(3) end−effector config : 0.000  0.056  0.269  0.052 -0.056  0.000  0.478  -0.206 -0.269  -0.478  0.000  -0.020 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.478 0.269 -0.056 0.052 -0.206 -0.020 
+        angular error magnitude ∣∣omega_b∣∣ : 0.551
+        linear error magnitude ∣∣v_b∣∣ : 0.214
+------------------------------------------
+Iteration 2:
+        joint vector : 2.5950 -1.0161 1.7589 -0.9596 -0.4519 -1.3754 
+        SE(3) end−effector config : 0.000  0.005  -0.094  -0.015 -0.005  0.000  0.104  0.021 0.094  -0.104  0.000  0.001 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.104 -0.094 -0.005 -0.015 0.021 0.001 
+        angular error magnitude ∣∣omega_b∣∣ : 0.140
+        linear error magnitude ∣∣v_b∣∣ : 0.026
+------------------------------------------
+Iteration 3:
+        joint vector : 2.5881 -1.0162 1.7145 -0.6547 -0.5423 -1.6150 
+        SE(3) end−effector config : 0.000  -0.007  0.022  0.005 0.007  0.000  0.012  0.001 -0.022  -0.012  0.000  -0.001 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.012 0.022 0.007 0.005 0.001 -0.001 
+        angular error magnitude ∣∣omega_b∣∣ : 0.026
+        linear error magnitude ∣∣v_b∣∣ : 0.005
+------------------------------------------
+Iteration 4:
+        joint vector : 2.5862 -1.0174 1.7272 -0.7108 -0.5548 -1.5698 
+        SE(3) end−effector config : 0.000  0.000  -0.001  0.000 -0.000  0.000  0.001  0.000 0.001  -0.001  0.000  -0.000 0.000  0.000  0.000  0.000 
+        error twist V_b: -0.001 -0.001 -0.000 0.000 0.000 -0.000 
+        angular error magnitude ∣∣omega_b∣∣ : 0.001
+        linear error magnitude ∣∣v_b∣∣ : 0.000
+------------------------------------------
+SUCCESS
+Wrote iterates.csv
