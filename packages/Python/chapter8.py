@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import sys
 import math
 from modern_robotics import *
 
@@ -51,3 +52,56 @@ taulist = InverseDynamics(thetalist=thetalist, dthetalist=dthetalist,
 
 np.set_printoptions(formatter={"float": lambda x: "{0:0.4f}".format(x)})
 print("taulist: ", taulist)
+
+M = MassMatrix(thetalist,Mlist,Glist,Slist)
+print("MassMatrix M: ", repr(M))
+
+c = VelQuadraticForces(thetalist,dthetalist,Mlist,Glist,Slist)
+print("VelQuadraticForces c: ", repr(c))
+
+grav = GravityForces(thetalist,g,Mlist,Glist,Slist)
+print("GravityForces grav: ", repr(grav))
+
+JTFtip = EndEffectorForces(thetalist,Ftip,Mlist,Glist,Slist)
+print("EndEffectorForces JFtip: ", repr(JTFtip))
+
+ddthetalist = ForwardDynamics(thetalist,dthetalist,taulist,g,Ftip,Mlist,Glist,Slist)
+print("ForwardDynamics ddthetalist: ", repr(ddthetalist))
+
+sys.exit()
+# Project
+print("Project C3 W2")
+thetalist = np.array([0, 0, 0, 0, 0, 0])
+dthetalist = np.array([0, 0, 0, 0, 0, 0])
+Ftip = np.array([0, 0, 0, 0, 0, 0])
+#ddthetalist = np.array([0, 0, 0, 0, 0, 0])
+
+#taulist = InverseDynamics(thetalist=thetalist, dthetalist=dthetalist,
+#                          ddthetalist=ddthetalist, g=g, Ftip=Ftip,
+#                          Mlist=Mlist, Glist=Glist, Slist=Slist)
+taulist = np.array([0, 0, 0, 0, 0, 0])
+print("taulist: ", taulist)
+
+ddthetalist = ForwardDynamics(thetalist,dthetalist,taulist,g,Ftip,Mlist,Glist,Slist)
+print("ForwardDynamics ddthetalist: ", repr(ddthetalist))
+
+dt = 0.01
+for i in range(0, 300):
+    [thetalistNext,dthetalistNext] = EulerStep(thetalist,dthetalist,ddthetalist,dt)
+    #print("thetalistNext: ", thetalistNext)
+    np.savetxt(sys.stdout, thetalist, newline="", delimiter=", ", fmt="%0.4f ")
+    print()
+
+    #print("dthetalistNext: ", dthetalistNext)
+    thetalist = thetalistNext
+    dthetalist = dthetalistNext
+    ddthetalist = ForwardDynamics(thetalist,dthetalist,taulist,g,Ftip,Mlist,Glist,Slist)
+    #print("ForwardDynamics ddthetalist: ", repr(ddthetalist))
+
+
+#Ftipmat = np.zeros([6, 6])
+#taumat = InverseDynamicsTrajectory(thetalist,dthetalist,ddthetalist, g,Ftipmat,Mlist,Glist,Slist)
+#print("Taumat: ", taumat)
+
+
+#[thetamat,dthetamat] = ForwardDynamicsTrajectory(thetalist,dthetalist,taumat, g,Ftipmat,Mlist,Glist,Slist,dt,intRes)
