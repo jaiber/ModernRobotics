@@ -1,0 +1,8 @@
+{
+    "left" : -0.5,
+    "right" : 0.5,
+    "top" : 0.5,
+    "bottom": -0.5,
+    "num_samples": 10,
+    "nearest": 5
+}
